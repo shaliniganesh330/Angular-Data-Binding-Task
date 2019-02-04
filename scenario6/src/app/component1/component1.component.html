@@ -1,0 +1,9 @@
+<div>
+  <h2>Parent Component</h2>
+  <label>MESSAGE :
+    <input type="text" [(ngModel)]="value"/>
+  </label> 
+  <button (click) = "onSubmit(value)">submit</button>
+ </div>
+ <app-component2 [ChildData]= Message></app-component2>
+ <app-component3 [ChildData]= Message></app-component3>
