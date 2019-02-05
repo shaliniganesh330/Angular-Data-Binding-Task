@@ -14,5 +14,6 @@ export class Component2Component implements OnInit {
   }
   messageChildHandler(value : string){
     this.Message = value;
+    this.messageChild.emit(this.Message)
   }
 }

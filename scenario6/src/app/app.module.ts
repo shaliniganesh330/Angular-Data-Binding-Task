@@ -6,20 +6,23 @@ import { AppComponent } from './app.component';
 import { Component1Component } from './component1/component1.component';
 import { Component2Component } from './component2/component2.component';
 import { Component3Component } from './component3/component3.component';
+import { DataService } from './shared/data.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     Component1Component,
     Component2Component,
-    Component3Component
+    Component3Component,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
